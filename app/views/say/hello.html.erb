@@ -1,2 +1,21 @@
-<h1>Say#hello</h1>
-<p>Find me in app/views/say/hello.html.erb</p>
+<h1>¡Hola desde Rails!</h1>
+<br>
+<h1>Prueba de Unicode: ÁÉÍÓÚ - ÑÑÑÑññññ - âéìöû</h1>
+<br>
+<h1>La hora de hoy es: <%= @time %></h1>
+<br>
+<p>
+	¡Di <%= link_to('Adiós', say_goodbye_path) %>!
+</p>
+<br>
+<h2>Playtime!</h2>
+<p>Operaciones aritméticas: 1 + 2 = <%= 1 + 2 %></p>
+<p>Concatenación: "cow" + "boy" = <%= 'cow' + 'boy' %></p>
+<p>De número 1 a hora: <%= 1.hour.from_now %></p>
+<br>
+<p>Archivos y directorios en el directorio actual:</p>
+<ul>
+	<% for file in @files %>
+		<li><%= file %></li>
+	<% end %>
+</ul>
